@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void) {
 		
-	int i=0,a=300,b=40,c=550,d=80;//abcd空心矩形坐标
+	int a=300,b=40,c=550,d=80;//abcd空心矩形坐标
 
 	string name;//账号
 	string pwd;//密码
@@ -20,7 +20,7 @@ int main(void) {
 		cout << "请输入密码：" << endl;
 		cin >> pwd;
 
-		if (name == "54hk"&&pwd == "123456") {
+		if (name == "54hk" && pwd == "123456") {
 			break;
 		}else {
 			cout << "账号或密码错误，请重新输入！" << endl;
@@ -40,7 +40,7 @@ int main(void) {
 	settextcolor(RGB(255, 255, 0));
 
 	//画一个空心矩形，左上角坐标（300,40）,右下角坐标（550,40）
-	for (i = 0; i <= 5; i++) {
+	for (int i = 0; i <= 5; i++) {
 		rectangle(a, b, c, d);
 		b += 60;
 		d += 60;
